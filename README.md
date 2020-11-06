@@ -1,4 +1,4 @@
-# tennis-scoring
+# Tennis Scoring
 This is a NodeJS simulation of a 1-set tennis match
 
 To install NodeJS dependencies do `npm install`.  
