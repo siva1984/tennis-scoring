@@ -6,14 +6,23 @@ const player2 = "Rafael Nadal";
 
 const match = new Match(player1, player2);
 const players = [player1, player2];
+let pointsPlayed = 1;
 
-console.log(`Start of Match: ${player1} ${match.score()} ${player2} \n`);
+console.log(`Start of Match: ${player1} ${match.score()} ${player2}\n`);
 
 // this will run a 1 set simulation
 while (!match.gameOver) {
     const player = Math.floor(Math.random() * players.length);
 
     console.log(match.pointWonBy(players[player]));
+
+    pointsPlayed++;
+
+    // show current match score at a random fixed interval of points played
+    if (pointsPlayed === 8) {
+        console.log(`Current score is: ${match.score()}`);
+        pointsPlayed = 1;
+    }
 }
 
 console.log(`Final score is: ${player1} ${match.score()} ${player2}`);
