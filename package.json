@@ -1,0 +1,21 @@
+{
+  "name": "tennis-scoring-js",
+  "version": "1.0.0",
+  "description": "NodeJS simulation of a 1-set tennis match",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "tennis",
+    "scoring",
+    "nodejs"
+  ],
+  "author": "Sivahari Sithamparanathan",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
