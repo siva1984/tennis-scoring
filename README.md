@@ -8,5 +8,33 @@ To install NodeJS dependencies do:
 npm install
 ```
 
-To run tests do `npm test`.  
-To run a simulated tennis scoring match do `npm start`.
+To run tests do:
+
+```bash
+npm test
+```
+
+To run a simulated tennis scoring match do:
+
+```bash
+npm start
+```
+
+## Run in Docker
+To build the image do:
+
+```bash
+docker build -t tennis-scoring .
+```
+
+To run tests in the container do:
+
+```bash
+docker run tennis-scoring sh -c "npm test"
+```
+
+To run the container do:
+
+```bash
+docker run tennis-scoring
+```
