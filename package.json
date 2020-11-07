@@ -17,5 +17,9 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/siva1984/tennis-scoring.git"
   }
 }
